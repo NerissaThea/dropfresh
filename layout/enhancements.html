@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Assignment Part 1 - Home Page">
+    <meta name="author" content="Dong Nhi Truong">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo/favicon.svg">
+    <title>DropFresh - Enhancement</title>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="contact">
+            <ul>
+                <li id="hotline"><i class="fa-solid fa-phone icon"></i> &nbsp;Hotline
+                    <span><strong>0849026110</strong></span>
+                </li>
+                <li id="mail"><i class="fa-solid fa-envelope icon"></i><a
+                        href="mailto:104977535@student.swin.edu.au">&nbsp;Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- desktop menubar -->
+        <div class="menu">
+            <div class="logo">
+                <a href="#menu-bar" class="tmenu"><i class="fa-solid fa-bars"></i>menu</a>
+                <a href="#" class="tlogo"><img src="images/logo/logover1.svg" alt="DropFresh logo"></a>
+            </div>
+            <div class="menu-wrapper">
+                <nav class="info1">
+                    <ul>
+                        <li class="menubar"><a href="index.html"><i class="fa-solid fa-house"></i>&nbsp;Home Page</a>
+                        </li>
+                        <li class="menubar"><a href="jobs.html">Career Opportunities</a></li>
+                        <li class="menubar"><a href="apply.html">Job Application</a></li>
+                        <li class="menubar"><a href="about.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- mobile responsive menubar -->
+        <nav class="info" id="menu-bar">
+            <ul>
+                <li class="menubar"><a href="index.html"><i class="fa-solid fa-house"></i>&nbsp;Home Page</a></li>
+                <li class="menubar"><a href="jobs.html">Career Opportunities</a></li>
+                <li class="menubar"><a href="apply.html">Job Application</a></li>
+                <li class="menubar"><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="herosizeindex">
+        <div class="hero">
+        </div>
+    </div>
+    <h1>First enhancement: <a href="index.html#hover">Click here to take a look</a></h1>
+    <p>This is the auto hover feature. This feature is intended to attract users to the
+        information I want to highlight. <br>
+        For this feature I use animation: autohover and autohover keyframes. Autohover
+        keyframes are used to format the display for it when autohover. <br>
+        And in this button I have added a stop state
+        when the mouse is inserted. Besides, I want users to be more certain about their choice, I have set the
+        font-size to be larger when hovering to clearly see the difference. </p>
+    <br>
+    <a href="jobs.html#block">This is a feature when clicking 'view more', a new table will be displayed right on the
+        interface without having to redirect to another page. This helps users save time, they can directly view the
+        jobs they want to apply for. In terms of code that implements this feature, in the default state, the website
+        hides the content of the job description, this job description has an id in the general class. Then I use
+        href="#id that I placed in 'view more'. The most important part is the css so that the hidden class
+        displays:block when targeted. Besides, I also have a close button at the top, when I click on it, I want it to
+        display the jobs.html page again and target the id of that job. If it's just a simple link of the a tag, it will
+        jump to the top of the page and make the user experience not good because they has to scroll down again.</a>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Assignment Part 1 - Position Descriptions">
+    <meta name="author" content="Dong Nhi Truong">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo/favicon.svg">
+    <title>DropFresh - Application Form</title>
+</head>
+
+<body style="font-family: Open-sans, sans-serif;">
+    <header>
+        <div class="contact">
+            <ul>
+                <li id="hotline"><i class="fa-solid fa-phone icon" ></i> &nbsp;Hotline
+                    <span><strong>0849026110</strong></span>
+                </li>
+                <li id="mail"><i class="fa-solid fa-envelope icon" ></i><a
+                        href="mailto:104977535@student.swin.edu.au">&nbsp;Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- desktop menubar -->
+        <div class="menu"> 
+            <div class="logo">
+                <a href="#menu-bar" class="tmenu"><i class="fa-solid fa-bars"></i>menu</a>
+                <a href="#" class="tlogo"><img src="images/logo/logover1.svg" alt="DropFresh logo"></a></div>
+            <div class="menu-wrapper">
+                <nav class="info1">
+                    <ul>
+                        <li class="menubar"><a href="index.html"><i class="fa-solid fa-house"></i>&nbsp;Home Page</a></li>
+                        <li class="menubar"><a href="jobs.html">Career Opportunities</a></li>
+                        <li class="menubar"><a href="apply.html">Job Application</a></li>
+                        <li class="menubar"><a href="about.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- mobile responsive menubar -->
+        <nav class="info" id="menu-bar">
+            <ul>
+                <li class="menubar"><a href="index.html"><i class="fa-solid fa-house"></i>&nbsp;Home Page</a></li>
+                <li class="menubar"><a href="jobs.html">Career Opportunities</a></li>
+                <li class="menubar"><a href="apply.html">Job Application</a></li>
+                <li class="menubar"><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="section-title">
+        <div class="title-hr"></div>
+        <h1>Job Application Form</h1>
+        <div class="title-hr"></div>
+    </div>
+    
+
+    <main class="form-content">
+        <h2>Please carefully check the information filled in before sending</h2>
+        <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+
+            <p>
+                <label for="jobref"><span >*</span>Job Reference Number:<br><span >(5 alphanumeric characters)</span></label>
+                <input class="forminput" type="text" id="jobref" name="jobref" pattern="[A-Za-z0-9]{5}" required>
+            </p>
+
+            <p>
+                <label class="form-name" for="firstname"><span >*</span>First Name:<br><span >(max 20 alpha characters)</span></label>
+                <input class="forminput" type="text" id="firstname" name="firstname" maxlength="20" required>
+
+                <label for="lastname"><span >*</span>Last Name:<br><span >(max 20 alpha characters)</span></label>
+                <input class="forminput" type="text" id="lastname" name="lastname" maxlength="20" required>
+            </p>
+
+            <p>
+                <label for="dob"><span >*</span >Date of Birth:</label>
+                <input class="forminput" type="date" id="dob" name="dob" required>
+            </p>
+
+            <fieldset>
+                <legend><span >*</span>Gender:</legend>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </fieldset>
+
+            <p><label for="address"><span >*</span>Street Address:<br><span >(max 40 characters)</span></label>
+                <input class="forminput" type="text" id="address" name="address" maxlength="40" required>
+
+                <label for="suburb"><span >*</span>Suburb/Town:<br><span >(max 40 characters)</span></label>
+                <input class="forminput" type="text" id="suburb" name="suburb" maxlength="40" required>
+            </p>
+
+            <p><label for="state"><span >*</span>State:</label>
+                <select id="state" name="state" required>
+                    <option value="">Please select</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select>
+
+                <label for="postcode"><span >*</span>Postcode: <br>
+                    <span >(exactly 4 digits)</span>
+                </label>
+                <input class="forminput" type="text" id="postcode" name="postcode" pattern="[0-9]{4}" required>
+            </p>
+
+            <p><label for="email"><span >*</span>Email:</label>
+                <input class="forminput" type="email" id="email" name="email" required>
+
+                <label for="phone"><span >*</span>Phone Number:<br><span >(8 to 12 digits)</span></label>
+                <input class="forminput" type="tel" id="phone" name="phone" pattern="[0-9]{8,12}" required>
+            </p>
+
+            <p class="jobsoption">
+                <b><span >*</span>Skills:</b>
+                    
+
+                <input class="jobsoptioncheckbox" type="checkbox" id="skill1" name="skill1" value="HTML">
+                <label class="jobsoptionlabel" for="skill1">HTML</label>
+
+                <input class="jobsoptioncheckbox" type="checkbox" id="skill2" name="skill2" value="CSS">
+                <label class="jobsoptionlabel" for="skill2">CSS</label>
+
+                <input class="jobsoptioncheckbox" type="checkbox" id="skill3" name="skill3" value="JavaScript">
+                <label class="jobsoptionlabel" for="skill3">JavaScript</label>
+
+                <input class="jobsoptioncheckbox" type="checkbox" id="skill4" name="skill4" value="Other">
+                <label class="jobsoptionlabel labelcheck" for="skill4">Other skills...</label>
+            </p>
+            <p><label for="otherskills">OtherSkills:</label>
+                <textarea id="otherskills" name="otherskills" placeholder="Enter here"></textarea>
+            </p>
+
+
+
+            <input class="section-5 button apply" type="submit" name="" id="" value="APPLY NOW">
+        </form>
+    </main>
+
+
+    <footer>
+        <div class="logo-footer">
+            <img src="images/logo/logover1.svg" alt="DropFresh logo">
+            <p>At DropFresh, we're passionate about sustainability and protecting the environment. Learnmore about
+                our eco-friendly practices and our dedication to minimizing our environmental footprint for a
+                healthier planet</p>
+        </div>
+
+        <div class="footer-hr"></div>
+
+        <div class="footer-middle">
+            <h3>Contact Information</h3>
+            <ul>
+                <li class="lh">Email: <a href="mailto:104977535@student.swin.edu.au">104977535@student.swin.edu.au</a>
+                </li>
+                <li class="lh">Phone: 0849026110</li>
+                <li class="lh">Address: A35, Bach Dang, Tan Binh District, Ho Chi Minh City </li>
+            </ul>
+            <h4><a href="index.html">Terms of Use | Privacy Policy</a></h4>
+        </div>
+
+        <div class="footer-hr"></div>
+        <div class="footer-bottom">
+            <h5>&copy; 2024 DropFresh</h5>
+        </div>
+    </footer>
+</body>
+
+</html>
