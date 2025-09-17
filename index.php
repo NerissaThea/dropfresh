@@ -4,6 +4,7 @@ ini_set('session.cookie_httponly', 1);
 ini_set('session.cookie_samesite', 'Strict');
 ini_set('session.use_strict_mode', 1);
 session_start();
+//alooooooooooooooooooooooooooooooooo
 // Set session ini settings for security
 require_once ('settings.php');
 require_once ('header.inc');
